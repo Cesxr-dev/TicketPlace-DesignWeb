@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Registro</title>
 </head>
 <body>
-    
+
+    <header class="main-header">
+        <a href="#" class="header-logo">TicketPlace</a>
+        <nav class="header-nav">
+            <a href="login.html" class="nav-link">Iniciar Sesion</a>
+            <a href="registro.html" class="nav-link">Registrarse</a>
+        </nav>
+    </header>
+
+    <main class="login-page">
+        <section class="hero-section">
+            <div class="hero-content">
+                <span class="label-info-brand">TicketPlace</span>
+                <h1 class="hero-title">Tu acceso premium a los mejores eventos.</h1>
+                <p class="hero-description">Únete a nuestra comunidad exclusiva y descubre experiencias diseñadas para elevar tu estilo de vida urbano.</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="form-card">
+                <header class="card-header">
+                    <h2 class="form-card-title">Registro</h2>
+                    <p>¿Ya tienes una cuenta? <a href="login.html" class="form-link-action">Inicia sesion</a></p>
+                </header>
+
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="nombre" class="label-input-info">Nombre completo</label>
+                        <input type="text" id="nombre" class="form-input-field" placeholder="Ej Nombre1 Nombre2 Apellido1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="label-input-info">Correo electrónico</label>
+                        <input type="email" id="email" class="form-input-field" placeholder="tu@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="label-input-info">Contraseña</label>
+                        <input type="password" id="password" class="form-input-field" placeholder="********">
+                        
+                    </div>
+
+                    <div class="form-group">
+                        <label for="repassword" class="label-input-info">Confirmar contraseña</label>
+                        <input type="password" id="repassword" class="form-input-field" placeholder="********" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tel" class="label-input-info">Num. de Telefono</label>
+                        <input type="tel" id="tel" class="form-input-field" placeholder="Ej. 1234567890" required>
+                    </div>
+
+                    <button type="submit" class="form-submit-btn">Registrarse</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>
