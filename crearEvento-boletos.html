@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicketPlace - Tipos de Boletos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/stylePnlAdmin.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="nav-left">
+                <a href="#" class="logo">TicketPlace</a>
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-item">Explorar</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <a class="btn-dashboard" href="dashboard-eventos.html">Dashboard</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="form-section">
+            <div class="section-header">
+                <h1>Tipos de Boletos</h1>
+                <p class="subtitle">Rellena todos los campos</p>
+            </div>
+
+            <article class="form-card">
+                <form>
+                    
+                    <div class="tickets-container">
+                        
+                        <!-- Muestra estática de un boleto como plantilla -->
+                        <div class="ticket-subcard">
+                            
+                            <div class="subcard-header">
+                                <span class="subcard-title">Boleto #1</span>
+                                <button type="button" class="btn-delete-ticket" title="Eliminar este tipo de boleto">
+                                    <svg class="trash-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                                    Eliminar
+                                </button>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="name-0">Nombre del Boleto</label>
+                                <input type="text" id="name-0" placeholder="Ej. Entrada General / VIP" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="price-0">Precio $:</label>
+                                <input type="number" step="0.01" min="0" id="price-0" placeholder="Ej. 450.00" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="qty-0">Capacidad / Cantidad</label>
+                                <input type="number" min="1" id="qty-0" placeholder="Ej. 500" required>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="add-ticket-wrapper">
+                        <button type="button" class="btn-add-ticket">
+                            <span class="plus-icon-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFFFFF" viewBox="0 0 256 256"><path d="M228,128a12,12,0,0,1-12,12H140v76a12,12,0,0,1-24,0V140H40a12,12,0,0,1,0-24h76V40a12,12,0,0,1,24,0v76h76A12,12,0,0,1,228,128Z"></path></svg>
+                            </span>
+                            Agregar Boleto
+                        </button>
+                    </div>
+
+                    <div class="form-actions">
+                        <a class="btn-submit" href="dashboard-eventos.html">
+                            Finalizar 
+                        </a>
+                    </div>
+
+                </form>
+            </article>
+        </section>
+    </main>
+
+</body>
+</html>

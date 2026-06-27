@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicketPlace - Crear Nuevo Evento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/stylePnlAdmin.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="nav-left">
+                <a href="#" class="logo">TicketPlace</a>
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-item">Explorar</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <a class="btn-dashboard" href="dashboard-eventos.html">Dashboard</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="form-section">
+            <div class="section-header">
+                <h1>Crear Nuevo Evento</h1>
+                <p class="subtitle">Rellena todos los campos</p>
+            </div>
+
+            <article class="form-card">
+                <form id="event-form">
+                    
+                    <div class="form-group">
+                        <label for="event-title">Título del Evento</label>
+                        <input type="text" id="event-title" name="eventTitle" placeholder="Ej. Festival de Jazz de Verano" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="event-description">Descripción</label>
+                        <textarea id="event-description" name="eventDescription" placeholder="Describe los detalles principales del evento..." rows="4" required></textarea>
+                    </div>
+
+                    <div class="form-grid-2col">
+                        <div class="form-group">
+                            <label for="event-date">Fecha y Hora</label>
+                            <input type="datetime-local" id="event-date" name="eventDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="event-category">Categoría</label>
+                            <div class="select-wrapper">
+                                <select id="event-category" name="eventCategory" required>
+                                    <option value="" disabled selected>Selecciona una...</option>
+                                    <option value="concierto">Concierto</option>
+                                    <option value="festival">Festival</option>
+                                    <option value="teatro">Teatro</option>
+                                    <option value="deportes">Deportes</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group icon-input-wrapper">
+                        <label for="event-location">Ubicación / Venue</label>
+                        <div class="input-with-icon">
+                            <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <input type="text" id="event-location" name="eventLocation" placeholder="Ej. Auditorio Nacional, CDMX" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Imagen / Portada de Evento</label>
+                        
+                        <label for="event-cover" class="file-custom-design">
+                            <span class="file-placeholder-text">Seleccionar Imagen</span>
+                        </label>
+                        
+                        <input type="file" id="event-cover" name="eventCover" accept="image/*" class="file-hidden-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Croquis de Ocupación</label>
+                        
+                        <label for="event-map" class="file-custom-design">
+                            <span class="file-placeholder-text">Seleccionar Imagen</span>
+                        </label>
+                        
+                        <input type="file" id="event-map" name="eventMap" accept="image/*" class="file-hidden-input">
+                    </div>
+
+                    <div class="form-actions">
+                        <a class="btn-submit" href="crearEvento-boletos.html">
+                            Siguiente 
+                            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </a>
+                    </div>
+
+                </form>
+            </article>
+        </section>
+    </main>
+
+</body>
+</html>
